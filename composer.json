@@ -1,0 +1,10 @@
+{
+    "description": "2nd project",
+    "license": "MIT",
+    "name": "hexlet/code",
+    "type": "library",
+    "require": {
+        "docopt/docopt": "^1.0",
+      "ext-json": "*"
+    }
+}
