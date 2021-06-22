@@ -30,7 +30,7 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: Linter check
-      run: composer exec --verbose phpcs -- --standard=PSR12 src bin
+      run: composer exec --verbose phpcs -- --standard=PSR12 bin
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
