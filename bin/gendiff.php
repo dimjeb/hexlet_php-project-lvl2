@@ -1,4 +1,5 @@
 <?php
+
 require('../vendor/docopt/docopt/src/docopt.php');
 
 $doc = <<<'DOCOPT'
@@ -14,12 +15,12 @@ Options:
 DOCOPT;
 
 $result = Docopt::handle($doc, array(
-    'argv'=>array_slice($_SERVER['argv'], 1),
-    'help'=>true,
-    'version'=>null,
-    'optionsFirst'=>false,
+    'argv' => array_slice($_SERVER['argv'], 1),
+    'help' => true,
+    'version' => null,
+    'optionsFirst' => false,
 ));
-foreach ($result as $k=>$v) {
+foreach ($result as $k => $v) {
     print_r($result);
     echo $k . ': ' . json_encode($v) . PHP_EOL;
 }
