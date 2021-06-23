@@ -2,25 +2,26 @@
 
 require('../vendor/docopt/docopt/src/docopt.php');
 
-$doc = <<<'DOCOPT'
-Generate diff
-
+$doc = <<<DOC
+Naval Fate.
+ 
 Usage:
-  gendiff (-h|--help)
-  gendiff (-v|--version)
-
+  naval_fate.php ship new <name>...
+  naval_fate.php ship <name> move <x> <y> [--speed=<kn>]
+  naval_fate.php ship shoot <x> <y>
+  naval_fate.php mine (set|remove) <x> <y> [--moored | --drifting]
+  naval_fate.php (-h | --help)
+  naval_fate.php --version
+ 
 Options:
-  -h --help                     Show this screen
-  -v --version                  Show version
-DOCOPT;
+  -h --help     Show this screen.
+  --version     Show version.
+  --speed=<kn>  Speed in knots [default: 10].
+  --moored      Moored (anchored) mine.
+  --drifting    Drifting mine.
+ 
+DOC;
 
-$result = Docopt::handle($doc, array(
-    'argv' => array_slice($_SERVER['argv'], 1),
-    'help' => true,
-    'version' => null,
-    'optionsFirst' => false,
-));
-foreach ($result as $k => $v) {
-    print_r($result);
-    echo $k . ': ' . json_encode($v) . PHP_EOL;
-}
+$args = Docopt::handle($doc, array('version'=>'Naval Fate 2.0'));
+foreach ($args as $k=>$v)
+    echo $k.': '.json_encode($v).PHP_EOL;
