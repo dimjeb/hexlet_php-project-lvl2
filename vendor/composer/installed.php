@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'fad93c6bce39bb09a90f951bd59ab3e0916c3cd0',
+    'reference' => 'b31e95309d2757240128f6de2518ab54e6b07f14',
     'name' => 'hexlet/code',
   ),
   'versions' => 
@@ -36,7 +36,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'fad93c6bce39bb09a90f951bd59ab3e0916c3cd0',
+      'reference' => 'b31e95309d2757240128f6de2518ab54e6b07f14',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -161,12 +161,12 @@
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '9.5.5',
-      'version' => '9.5.5.0',
+      'pretty_version' => '9.5.6',
+      'version' => '9.5.6.0',
       'aliases' => 
       array (
       ),
-      'reference' => '89ff45ea9d70e35522fb6654a2ebc221158de276',
+      'reference' => 'fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb',
     ),
     'sebastian/cli-parser' => 
     array (
