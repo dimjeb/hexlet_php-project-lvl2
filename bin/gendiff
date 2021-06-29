@@ -30,7 +30,9 @@ $json2 = '{
   "verbose": true,
   "host": "hexlet.io"
 }';
-print_r(json_decode($json1));
+$json1 = json_decode($json1);
+$json2 = json_decode($json2);
+print_r(array_diff($json1, $json2))
 $args = Docopt::handle($doc, array('version'=>'GenDiff 1.0'));
 foreach ($args as $k=>$v)
     echo $k.': '.json_encode($v).PHP_EOL;
