@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'b31e95309d2757240128f6de2518ab54e6b07f14',
+    'reference' => 'add413aaf72db551effc3025a58654b35bfa5e98',
     'name' => 'hexlet/code',
   ),
   'versions' => 
@@ -36,7 +36,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'b31e95309d2757240128f6de2518ab54e6b07f14',
+      'reference' => 'add413aaf72db551effc3025a58654b35bfa5e98',
+    ),
+    'lstrojny/functional-php' => 
+    array (
+      'pretty_version' => '1.17.0',
+      'version' => '1.17.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e459d5cb307bc6e10e9e992c4e96bb71a0262506',
     ),
     'myclabs/deep-copy' => 
     array (
