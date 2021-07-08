@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df1bbaec-bfff-4f37-bcd3-3fbdbcdca3fb" name="Default Changelist" comment="From PHPStorm">
-      <change afterPath="$PROJECT_DIR$/bin/1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/gendiff" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gendiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/phpcbf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/phpcs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -71,6 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="PHP Script.1.php">
@@ -80,7 +85,7 @@
     <configuration name="1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/1.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP" />
+          <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
       <method v="2" />
@@ -119,6 +124,9 @@
       <option name="presentableId" value="Default" />
       <updated>1624420843814</updated>
       <workItem from="1624420847699" duration="13527000" />
+      <workItem from="1625114708161" duration="1116000" />
+      <workItem from="1625119087571" duration="617000" />
+      <workItem from="1625460946218" duration="8966000" />
     </task>
     <task id="LOCAL-00001" summary="From PHPStorm">
       <created>1624436712423</created>
@@ -157,6 +165,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="From PHPStorm" />
