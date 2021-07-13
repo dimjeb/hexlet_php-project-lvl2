@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df1bbaec-bfff-4f37-bcd3-3fbdbcdca3fb" name="Default Changelist" comment="From PHPStorm">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="df1bbaec-bfff-4f37-bcd3-3fbdbcdca3fb" name="Default Changelist" comment="array is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/gendiff" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gendiff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpcbf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcbf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpcs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcs" afterDir="false" />
@@ -21,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -78,7 +86,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Script.1.php">
+  <component name="RunManager" selected="PHP Script.gendiff">
     <configuration name="gendiff" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php-project-lvl2/bin/gendiff" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -98,18 +106,18 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="gendiff" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/gendiff">
+    <configuration name="gendiff" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/gendiff" scriptParameters="fixtures/file1.json fixtures/file2.json">
       <CommandLine>
         <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP" />
+          <option name="interpreterName" value="PHP 7.4" />
         </PhpTestInterpreterSettings>
       </CommandLine>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.1.php" />
         <item itemvalue="PHP Script.gendiff" />
+        <item itemvalue="PHP Script.1.php" />
         <item itemvalue="PHP Script.dub.php" />
         <item itemvalue="JavaScript Debug.gendiff" />
       </list>
@@ -126,7 +134,8 @@
       <workItem from="1624420847699" duration="13527000" />
       <workItem from="1625114708161" duration="1116000" />
       <workItem from="1625119087571" duration="617000" />
-      <workItem from="1625460946218" duration="8966000" />
+      <workItem from="1625460946218" duration="9698000" />
+      <workItem from="1626060612280" duration="11517000" />
     </task>
     <task id="LOCAL-00001" summary="From PHPStorm">
       <created>1624436712423</created>
@@ -169,6 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="From PHPStorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="From PHPStorm" />
+    <MESSAGE value="Получил готовый массив&#10;todo - сортировка" />
+    <MESSAGE value="array is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="array is done" />
   </component>
 </project>
