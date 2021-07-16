@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df1bbaec-bfff-4f37-bcd3-3fbdbcdca3fb" name="Default Changelist" comment="array is done">
+    <list default="true" id="df1bbaec-bfff-4f37-bcd3-3fbdbcdca3fb" name="Default Changelist" comment="array_and_sort_is_done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/gendiff" beforeDir="false" afterPath="$PROJECT_DIR$/bin/gendiff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpcbf" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcbf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpcs" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpcs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bin/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,7 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="gendiff" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/gendiff" scriptParameters="fixtures/file1.json fixtures/file2.json">
+    <configuration name="gendiff" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/gendiff" scriptParameters="fixtures\file1.json fixtures\file2.json">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 7.4" />
@@ -135,7 +137,8 @@
       <workItem from="1625114708161" duration="1116000" />
       <workItem from="1625119087571" duration="617000" />
       <workItem from="1625460946218" duration="9698000" />
-      <workItem from="1626060612280" duration="11517000" />
+      <workItem from="1626060612280" duration="16780000" />
+      <workItem from="1626320909289" duration="4970000" />
     </task>
     <task id="LOCAL-00001" summary="From PHPStorm">
       <created>1624436712423</created>
@@ -180,6 +183,7 @@
     <MESSAGE value="From PHPStorm" />
     <MESSAGE value="Получил готовый массив&#10;todo - сортировка" />
     <MESSAGE value="array is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="array is done" />
+    <MESSAGE value="array_and_sort_is_done" />
+    <option name="LAST_COMMIT_MESSAGE" value="array_and_sort_is_done" />
   </component>
 </project>

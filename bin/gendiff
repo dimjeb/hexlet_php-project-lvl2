@@ -1,12 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-require('../vendor/docopt/docopt/src/docopt.php');
+require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
 require_once __DIR__ . '/../vendor/autoload.php';
-
-$args = Docopt::handle($doc, array('version'=>'Naval Fate 2.0'));
-foreach ($args as $k=>$v)
-    echo $k.': '.json_encode($v).PHP_EOL;
 
 $doc = <<<DOC
 Generate diff
@@ -21,47 +17,44 @@ Options:
   -v --version                  Show version
   --format <fmt>                Report format [default: stylish] 
 DOC;
+$args = Docopt::handle($doc, array('version'=>'Naval Fate 2.0'));
+$file1_handle = fopen($args->args["<firstFile>"], "r");
+$file2_handle = fopen($args->args["<secondFile>"], "r");
+$json1 = fread($file1_handle, filesize($args->args["<firstFile>"]));
+$json2 = fread($file2_handle, filesize($args->args["<secondFile>"]));
+print_r(genDiff($json1,$json2));
 
-$json1 = '{
-    "host": "hexlet.io",
-  "timeout": 50,
-  "proxy": "123.234.53.22",
-  "follow": false
-}';
+function genDiff($json1, $json2) {
+    $json_1 = json_decode($json1, true);
+    $json_2 = json_decode($json2, true);
+    ksort($json_1);
+    ksort($json_2);
+    foreach ($json_1 as $key => $item) {
+        if ($item === true) {
+            $item = 'true';
+        } elseif ($item === false) {
+            $item = 'false';
+        }
+        if (array_key_exists($key, $json_2) && $json_2[$key] == $json_1[$key]) {
+            $result[] = '    ' . $key . ': ' . $item;
+        } elseif (!array_key_exists($key, $json_2)) {
+            $result[] = '  - ' . $key . ': ' . $item;
+        } elseif ($json_2[$key] != $json_1[$key]) {
+            $result[] = '  - ' . $key . ': ' . $item;
+            $result[] = '  + ' . $key . ': ' . $json_2[$key];
+        }
+    }
+    $json2_diff = array_diff_key($json_2, $json_1);
+    foreach ($json2_diff as $key => $item) {
+        if ($item === true) {
+            $item = 'true';
+        } elseif ($item === false) {
+            $item = 'false';
+        }
 
-$json2 = '{
-    "timeout": 20,
-  "verbose": true,
-  "host": "hexlet.io"
-}';
-$json_1 = json_decode($json1, true);
-$json_2 = json_decode($json2, true);
-ksort($json_1);
-ksort($json_2);
-foreach ($json_1 as $key => $item) {
-    if ($item === true) {
-        $item = 'true';
-    } elseif ($item === false) {
-        $item = 'false';
-    }
-    if (array_key_exists($key, $json_2) && $json_2[$key] == $json_1[$key]) {
-        $result[] = '    ' . $key . ': ' . $item;
-    } elseif (!array_key_exists($key, $json_2)) {
-        $result[] = '  - ' . $key . ': ' . $item;
-    } elseif ($json_2[$key] != $json_1[$key]) {
-        $result[] = '  - ' . $key . ': ' . $item;
-        $result[] = '  + ' . $key . ': ' . $json_2[$key];
-    }
-}
-$json2_diff = array_diff_key($json_2, $json_1);
-foreach ($json2_diff as $key => $item) {
-    if ($item === true) {
-        $item = 'true';
-    } elseif ($item === false) {
-        $item = 'false';
+        $result[] = '  + ' . $key . ': ' . $item;
     }
 
-    $result[] = '  + ' . $key . ': ' . $item;
+    return $result;
 }
 
-print_r($result);
