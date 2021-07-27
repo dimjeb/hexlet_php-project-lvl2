@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'add413aaf72db551effc3025a58654b35bfa5e98',
+    'reference' => '0567ab6da209f87ddbc45360e283a1c64f07dc60',
     'name' => 'hexlet/code',
   ),
   'versions' => 
@@ -36,7 +36,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'add413aaf72db551effc3025a58654b35bfa5e98',
+      'reference' => '0567ab6da209f87ddbc45360e283a1c64f07dc60',
     ),
     'lstrojny/functional-php' => 
     array (
@@ -62,21 +62,21 @@
     ),
     'nikic/php-parser' => 
     array (
-      'pretty_version' => 'v4.10.5',
-      'version' => '4.10.5.0',
+      'pretty_version' => 'v4.12.0',
+      'version' => '4.12.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4432ba399e47c66624bc73c8c0f811e5c109576f',
+      'reference' => '6608f01670c3cc5079e18c1dab1104e002579143',
     ),
     'phar-io/manifest' => 
     array (
-      'pretty_version' => '2.0.1',
-      'version' => '2.0.1.0',
+      'pretty_version' => '2.0.3',
+      'version' => '2.0.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => '85265efd3af7ba3ca4b2a2c34dbfc5788dd29133',
+      'reference' => '97803eca37d319dfa7826cc2437fc020857acb53',
     ),
     'phar-io/version' => 
     array (
@@ -170,12 +170,12 @@
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '9.5.6',
-      'version' => '9.5.6.0',
+      'pretty_version' => '9.5.7',
+      'version' => '9.5.7.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb',
+      'reference' => 'd0dc8b6999c937616df4fb046792004b33fd31c5',
     ),
     'sebastian/cli-parser' => 
     array (

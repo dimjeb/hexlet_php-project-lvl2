@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+namespace GenDiff;
+
 require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -22,11 +24,14 @@ $file1_handle = fopen($args->args["<firstFile>"], "r");
 $file2_handle = fopen($args->args["<secondFile>"], "r");
 $json1 = fread($file1_handle, filesize($args->args["<firstFile>"]));
 $json2 = fread($file2_handle, filesize($args->args["<secondFile>"]));
-print_r(genDiff($json1,$json2));
 
 function genDiff($json1, $json2) {
     $json_1 = json_decode($json1, true);
     $json_2 = json_decode($json2, true);
+    if(!is_array($json_1) && !is_string($json1) || !is_array($json_2) && !is_string($json2)) {
+        echo 'Ошибка JSON';
+        return '';
+    }
     ksort($json_1);
     ksort($json_2);
     foreach ($json_1 as $key => $item) {
@@ -54,7 +59,7 @@ function genDiff($json1, $json2) {
 
         $result[] = '  + ' . $key . ': ' . $item;
     }
-
-    return $result;
+    return json_encode($result);
 }
 
+print_r(genDiff($json1, $json2));

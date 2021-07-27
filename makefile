@@ -6,3 +6,5 @@ push:
 	git add .
 	git commit -m $desc
 	git push
+test:
+	composer exec --verbose phpunit tests
