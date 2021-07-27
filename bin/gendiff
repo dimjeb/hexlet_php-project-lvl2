@@ -3,7 +3,7 @@
 
 namespace GenDiff;
 
-require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
+//require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $doc = <<<DOC
@@ -19,7 +19,7 @@ Options:
   -v --version                  Show version
   --format <fmt>                Report format [default: stylish] 
 DOC;
-$args = Docopt::handle($doc, array('version'=>'Naval Fate 2.0'));
+$args = \Docopt::handle($doc, array('version'=>'Naval Fate 2.0'));
 $file1_handle = fopen($args->args["<firstFile>"], "r");
 $file2_handle = fopen($args->args["<secondFile>"], "r");
 $json1 = fread($file1_handle, filesize($args->args["<firstFile>"]));
