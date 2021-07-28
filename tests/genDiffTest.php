@@ -3,10 +3,11 @@
 namespace App\Tests;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once "../bin/gendiff";
 
 use Webmozart\Assert\Assert;
 
-use function GenDiff\gendiff;
+//use function \gendiff;
 
 $json1 =
 '{
@@ -32,4 +33,4 @@ $result =
     "  + timeout": 20,
     "  + verbose": true
 }';
-Assert::eq(genDiff($json1, $json2), ['one', 'two']);
+Assert::eq(\genDiff($json1, $json2), ['one', 'two']);

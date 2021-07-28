@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-namespace GenDiff;
+//namespace GenDiff;
 
 //require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
 require_once __DIR__ . '/../vendor/autoload.php';

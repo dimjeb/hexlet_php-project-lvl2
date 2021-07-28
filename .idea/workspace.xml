@@ -87,7 +87,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dumpAutoload C:/Users/user/PhpstormProjects/php-project-lvl2/composer.json" value="--no-interaction --ansi --verbose" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php-home-task-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -164,6 +165,7 @@
       <workItem from="1627290274166" duration="1286000" />
       <workItem from="1627291673103" duration="2813000" />
       <workItem from="1627357264054" duration="4605000" />
+      <workItem from="1627365150539" duration="3013000" />
     </task>
     <task id="LOCAL-00001" summary="From PHPStorm">
       <created>1624436712423</created>
