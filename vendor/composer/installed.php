@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '0567ab6da209f87ddbc45360e283a1c64f07dc60',
+    'reference' => '30ed78f6a42883dde07817f1c2583d537b21a7df',
     'name' => 'hexlet/code',
   ),
   'versions' => 
@@ -36,7 +36,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '0567ab6da209f87ddbc45360e283a1c64f07dc60',
+      'reference' => '30ed78f6a42883dde07817f1c2583d537b21a7df',
     ),
     'lstrojny/functional-php' => 
     array (
@@ -170,12 +170,12 @@
     ),
     'phpunit/phpunit' => 
     array (
-      'pretty_version' => '9.5.7',
-      'version' => '9.5.7.0',
+      'pretty_version' => '9.5.8',
+      'version' => '9.5.8.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd0dc8b6999c937616df4fb046792004b33fd31c5',
+      'reference' => '191768ccd5c85513b4068bdbe99bb6390c7d54fb',
     ),
     'sebastian/cli-parser' => 
     array (
@@ -341,12 +341,12 @@
     ),
     'theseer/tokenizer' => 
     array (
-      'pretty_version' => '1.2.0',
-      'version' => '1.2.0.0',
+      'pretty_version' => '1.2.1',
+      'version' => '1.2.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '75a63c33a8577608444246075ea0af0d052e452a',
+      'reference' => '34a41e998c2183e22995f158c581e7b5e755ab9e',
     ),
     'webmozart/assert' => 
     array (

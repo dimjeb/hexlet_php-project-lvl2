@@ -103,6 +103,8 @@ class ComposerStaticInitd85e56adb01dd5f46769a8bde8faa821
         'ab56e17b28e0838251fb1c661a411154' => __DIR__ . '/..' . '/lstrojny/functional-php/src/Functional/With.php',
         '883cde4f940a7074b75c81b8c4e17796' => __DIR__ . '/..' . '/lstrojny/functional-php/src/Functional/Zip.php',
         'ed68e79e67321b486d441991e1eed26a' => __DIR__ . '/..' . '/lstrojny/functional-php/src/Functional/ZipAll.php',
+        'da39e720f3b104e5bb838cf87c59ce14' => __DIR__ . '/../..' . '/bin/gendiff',
+        'ed9e4986803a64389f03b66ff50ef98e' => __DIR__ . '/../..' . '/bin/gendiff.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -131,6 +133,10 @@ class ComposerStaticInitd85e56adb01dd5f46769a8bde8faa821
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'App\\gendiff\\' => 12,
         ),
     );
 
@@ -168,6 +174,10 @@ class ComposerStaticInitd85e56adb01dd5f46769a8bde8faa821
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\gendiff\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/bin/gendiff.php',
         ),
     );
 

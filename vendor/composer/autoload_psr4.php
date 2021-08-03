@@ -14,4 +14,5 @@ return array(
     'Functional\\' => array($vendorDir . '/lstrojny/functional-php/src/Functional'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'App\\gendiff\\' => array($baseDir . '/bin/gendiff.php'),
 );

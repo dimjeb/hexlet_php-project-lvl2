@@ -1,10 +1,15 @@
 #!/usr/bin/env php
 <?php
 
-//namespace GenDiff;
-
 //require __DIR__ . '/../vendor/docopt/docopt/src/docopt.php';
-require_once __DIR__ . '/../vendor/autoload.php';
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+use function App\gendiff\gendiff;
 
 $doc = <<<DOC
 Generate diff
@@ -25,41 +30,5 @@ $file2_handle = fopen($args->args["<secondFile>"], "r");
 $json1 = fread($file1_handle, filesize($args->args["<firstFile>"]));
 $json2 = fread($file2_handle, filesize($args->args["<secondFile>"]));
 
-function genDiff($json1, $json2) {
-    $json_1 = json_decode($json1, true);
-    $json_2 = json_decode($json2, true);
-    if(!is_array($json_1) && !is_string($json1) || !is_array($json_2) && !is_string($json2)) {
-        echo 'Ошибка JSON';
-        return '';
-    }
-    ksort($json_1);
-    ksort($json_2);
-    foreach ($json_1 as $key => $item) {
-        if ($item === true) {
-            $item = 'true';
-        } elseif ($item === false) {
-            $item = 'false';
-        }
-        if (array_key_exists($key, $json_2) && $json_2[$key] == $json_1[$key]) {
-            $result[] = '    ' . $key . ': ' . $item;
-        } elseif (!array_key_exists($key, $json_2)) {
-            $result[] = '  - ' . $key . ': ' . $item;
-        } elseif ($json_2[$key] != $json_1[$key]) {
-            $result[] = '  - ' . $key . ': ' . $item;
-            $result[] = '  + ' . $key . ': ' . $json_2[$key];
-        }
-    }
-    $json2_diff = array_diff_key($json_2, $json_1);
-    foreach ($json2_diff as $key => $item) {
-        if ($item === true) {
-            $item = 'true';
-        } elseif ($item === false) {
-            $item = 'false';
-        }
 
-        $result[] = '  + ' . $key . ': ' . $item;
-    }
-    return json_encode($result);
-}
-
-print_r(genDiff($json1, $json2));
+var_dump(App\gendiff\genDiff($json1, $json2));

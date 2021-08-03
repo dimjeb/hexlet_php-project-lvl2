@@ -1,17 +1,26 @@
 {
-    "description": "2nd project",
-    "license": "MIT",
-    "name": "hexlet/code",
-    "type": "library",
-    "require": {
-        "docopt/docopt": "^1.0",
-      "ext-json": "*",
-        "squizlabs/php_codesniffer": "^3.6",
-        "phpunit/phpunit": "^9.5",
-        "lstrojny/functional-php": "^1.17",
-        "webmozart/assert": "^1.10"
-    },
-    "bin": [
-      "tests/gendiff"
-    ]
+  "description": "2nd project",
+  "license": "MIT",
+  "name": "hexlet/code",
+  "type": "library",
+  "require": {
+    "docopt/docopt": "^1.0",
+    "ext-json": "*",
+    "squizlabs/php_codesniffer": "^3.6",
+    "phpunit/phpunit": "^9.5",
+    "lstrojny/functional-php": "^1.17",
+    "webmozart/assert": "^1.10"
+  },
+  "autoload": {
+    "files": [
+      "bin/gendiff",
+      "bin/gendiff.php"
+    ],
+    "psr-4": {
+      "App\\gendiff\\": "bin/gendiff.php"
+        }
+  },
+  "bin": [
+    "bin/gendiff"
+  ]
 }
